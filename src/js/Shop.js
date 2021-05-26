@@ -19,7 +19,7 @@ class Shop {
         newItem = new BackstagePass(name, sellIn, quality);
         break;
       case name === 'Sulfuras, Hand of Ragnaros':
-        newItem = new Sulfuras(name, sellIn, quality);
+        newItem = new Sulfuras();
         break;
       case /^(conjured)/.test(name.toLowerCase()):
         newItem = new ConjuredItem(name, sellIn, quality);
